@@ -143,14 +143,30 @@
         \pause
         Verify(message,Signature,$p_k$) = True/False
     \end{block}
+\end{frame}
+
+\begin{frame}
+    The ideal cryptographic hash function has five main properties:
+    \begin{itemize}
+        \item Deterministic the same message always results in the same hash
+        \item Quick to compute
+        \item Infeasible to generate a message from its hash value except by trying all possible messages
+        \item A small change changes the entire hash value
+        \item Infeasible to find two different messages with the same hash values
+    \end{itemize}
+\end{frame}
+\begin{frame}
+    A couple hash functions:
+    \begin{itemize}
+        \item MD5 (128 bits)
+        \item SHA-1 (160 bits)
+        \item SHA-2 aka SHA-256 and SHA-512 
+        \item and many more
+    \end{itemize}
     \pause
     The encryption used is sha256\\
     \pause
     $2^(256)$ possibilities
 \end{frame}
-
 \subsection{Proof of Work}
-
-    
-
 \end{document}
