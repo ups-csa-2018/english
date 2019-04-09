@@ -115,7 +115,7 @@
 
 \begin{frame}
     \begin{center}
-        \:%s/8cm/7cm/includegraphics[height=7cm]{images/explanation-8.png}
+        \includegraphics[height=7cm]{images/explanation-8.png}
     \end{center}
 \end{frame}
 
@@ -135,15 +135,18 @@
 \end{frame}
 
 \begin{frame}
+    Works with public keys ($p_k$) and private keys ($s_k$)
+    Sign(message,$s_k$) = Signature\\
+    Verify(message,Signature,$p_k$) = True/False
+\end{frame}
+\begin{frame}
 
     Works with public keys ($p_k$) and private keys ($s_k$)
-    Sign(message,$p_k$) = Signature\\
+    Sign(message,$s_k$) = Signature\\
     sha256(message/file,$p_k$) = 0101101010101110101000000010
 \end{frame}
 \subsection{Proof of Work}
 
-\begin{frame}
     
-\end{frame}
 
 \end{document}
