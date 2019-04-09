@@ -131,20 +131,24 @@
 
 \begin{frame}
     Works with public keys ($p_k$) and private keys ($s_k$)
-    Sign(message,$p_k$) = Signature
+    \pause
+    \begin{itemize}
+        \item public keys are know to the general public
+            \pause
+        \item private keys are only know to the user
+            \pause
+    \end{itemize}
+    \begin{block}{}
+        Sign(message,$p_k$) = Signature\\
+        \pause
+        Verify(message,Signature,$p_k$) = True/False
+    \end{block}
+    \pause
+    The encryption used is sha256\\
+    \pause
+    $2^(256)$ possibilities
 \end{frame}
 
-\begin{frame}
-    Works with public keys ($p_k$) and private keys ($s_k$)
-    Sign(message,$s_k$) = Signature\\
-    Verify(message,Signature,$p_k$) = True/False
-\end{frame}
-\begin{frame}
-
-    Works with public keys ($p_k$) and private keys ($s_k$)
-    Sign(message,$s_k$) = Signature\\
-    sha256(message/file,$p_k$) = 0101101010101110101000000010
-\end{frame}
 \subsection{Proof of Work}
 
     
